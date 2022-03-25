@@ -3,13 +3,10 @@ import java.util.*;
 public class main {
  
   public static void main(String[] args) {
-     
-    System.out.println("Sorting using TreeMap\n");
-     
-    sortByKeyUsingTreeMap();
+    sort();
   }
  
-  private static void sortByKeyUsingTreeMap() 
+  private static void sort() 
   {
     Map<String, Integer> unSortedMap = getUnSortedMap();
      
@@ -22,11 +19,11 @@ public class main {
   private static Map<String, Integer> getUnSortedMap() 
   {
     Map<String, Integer> unsortMap = new HashMap<>();
-    unsortMap.put("desh", 1);
-    unsortMap.put("sam", 2);
-    unsortMap.put("dev", 3);
-    unsortMap.put("jatin", 4);
-    unsortMap.put("utkarsh", 5);
+    unsortMap.put("kgf", 10);
+    unsortMap.put("jatin", 20);
+    unsortMap.put("sameer", 30);
+    unsortMap.put("dean", 40);
+    unsortMap.put("utkarsh", 50);
     return unsortMap;
   }
 }
