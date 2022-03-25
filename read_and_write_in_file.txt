@@ -22,7 +22,7 @@ public class main {
             fr.close();
             fw.close();
             System.out.println(
-                "File reading and writing both done");
+                "File reading and writing done");
         }  
         catch (IOException e) {
               System.out.println(
