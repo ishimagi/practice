@@ -1,26 +1,23 @@
 import java.util.*;
 
-public class main {
+public class max_min {
 
-    public int maxim(int A[],int n)
+    public void max_min(int A[],int n)
     {
-        int maxi=A[0];
+        int max_ele=A[0];
         for(int i=1;i<n;i++)
         {
-            if(A[i]>maxi)
-                maxi=A[i];
+            if(A[i]>max_ele)
+                max_ele=A[i];
         }
-        return maxi;
-    }
-    public int minim(int A[],int n)
-    {
-        int mini=A[0];
+        int min_ele=A[0];
         for(int i=1;i<n;i++)
         {
-            if(A[i]<mini)
-                mini=A[i];
+            if(A[i]<min_ele)
+                min_ele=A[i];
         }
-        return mini;
+        System.out.println("Max element:"+max_ele);
+        System.out.println("Min element:"+min_ele);
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -32,8 +29,7 @@ public class main {
         {
             A[i]=sc.nextInt();
         }
-        main find = new main();
-        System.out.println("Max element:"+find.maxim(A,n));
-        System.out.println("Min element:"+find.minim(A,n));
+        max_min res = new max_min();
+        res.max_min(A,n);
     }
-    }
+}
