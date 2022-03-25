@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class main {
+public class sort_map {
   public static void main(String[] args) {
     sort();
   }
