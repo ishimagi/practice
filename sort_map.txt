@@ -1,19 +1,14 @@
 import java.util.*;
- 
+
 public class main {
- 
   public static void main(String[] args) {
     sort();
   }
- 
   private static void sort() 
   {
     Map<String, Integer> unSortedMap = getUnSortedMap();
-     
     System.out.println("Unsorted Map : " + unSortedMap);
- 
     Map<String, Integer> sortedMap = new TreeMap<String, Integer>(unSortedMap);
-     
     System.out.println("Sorted Map   : " + sortedMap);
   }
   private static Map<String, Integer> getUnSortedMap() 
