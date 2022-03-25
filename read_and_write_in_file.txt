@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class main {  
+public class read_write {  
     public static void main(String[] args)
     {
         try {  
