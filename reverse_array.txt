@@ -1,13 +1,6 @@
 import java.util.*;
   
-public class main {
-
-    static void reverse(Integer a[])
-    {
-        Collections.reverse(Arrays.asList(a));
-        System.out.println(Arrays.asList(a));
-    }
-  
+public class main {  
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
@@ -19,5 +12,7 @@ public class main {
         {
             A[i]=sc.nextInt();
         }
-        reverse(A);    }
+        Collections.reverse(Arrays.asList(A));
+        System.out.println(Arrays.asList(A));   
+    }
 }
